@@ -1,6 +1,6 @@
 package pl.kolodzianka.entities;
 
-public class Produkt {
+public class Product {
 
     Long id;
     String name;
@@ -8,7 +8,9 @@ public class Produkt {
     Double price;
     Integer quantity;
 
-    public Produkt(Long id, String name, String description, Double price, Integer quantity) {
+    public Product(){}
+
+    public Product(Long id, String name, String description, Double price, Integer quantity) {
         this.id = id;
         this.name = name;
         this.description = description;

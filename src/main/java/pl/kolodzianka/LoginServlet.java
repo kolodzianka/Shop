@@ -23,7 +23,6 @@ public class LoginServlet extends HttpServlet {
         ObjectMapper mapper = new ObjectMapper();
 
 
-
         String username = req.getParameter("user");
         String password = req.getParameter("pwd");
 
@@ -35,25 +34,32 @@ public class LoginServlet extends HttpServlet {
         String path = "/Users/ania/Projekty/Sklepik/src/main/webapp/WEB-INF/users.json";
 
 
-        JsonUserLists users =  mapper.readValue(new File (path), JsonUserLists.class);
+        JsonUserLists users = mapper.readValue(new File(path), JsonUserLists.class);
 
-        if (loguser.getUsername() != null && loguser.getPassword() != null && loguser.equals(users.getUsers())){
-//            Cookie loginCookie = new Cookie("jakisKlient", user);
-//            loginCookie.setMaxAge(30*60);
-//            resp.addCookie(loginCookie);
-            resp.sendRedirect("sklep.jsp");
-        }
-        else {
+
+        if (loguser.getUsername() != null && loguser.getPassword() != null) {
+            Cookie loginCookie = new Cookie("zalogowany", username);
+            loginCookie.setMaxAge(30*60);
+            resp.addCookie(loginCookie);
+            for (int i = 1; i < users.getUsers().size(); i++) {
+                User u = users.getUsers().get(i);
+                if (u.getUsername().equals(username) && u.getPassword().equals(password)) {
+                    resp.sendRedirect("/shopServlet");
+                }
+
+            }
+
             RequestDispatcher rd = getServletContext().getRequestDispatcher("/index.jsp");
-            resp.getWriter().println("<font color=red>Zaloguj się lub załóż konto</font>");
-            rd.include(req, resp); // dokleja powyzszy tekst
+            resp.getWriter().println("<font color=red>Niepoprawne dane lub załóż konto</font>");
+            rd.include(req, resp);
+
+
+        } else {
+            RequestDispatcher rd = getServletContext().getRequestDispatcher("/index.jsp");
+            resp.getWriter().println("<font color=red>Wpisz username i hasło!</font>");
+            rd.include(req, resp);
         }
 
-
-
-
-
-        out.println("Zalogowano: " + users.toString());
 
     }
 }
