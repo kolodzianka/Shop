@@ -1,0 +1,17 @@
+{
+	"products": [{
+			"id": 1,
+			"name": "kasza",
+			"description": "sypka i fajna",
+			"price": 10,
+			"quantity": 15
+		},
+		{
+			"id": 2,
+			"name": "Baton 3Bit",
+			"description": "ciastko, karmel, czekolada",
+			"price": 3,
+			"quantity": 27
+		}
+	]
+}

@@ -1,7 +1,7 @@
 <html>
 <body>
 <h2>Witaj !</h2>
-<form action="/ListaProduktow" method="post">
+<form action="/loginServlet" method="post">
 
     Username: <input type="text" name="user"><br/>
     Password: <input type="password" name="pwd"><br/>
@@ -10,9 +10,7 @@
 
 
 </form>
-<form action="register.jsp" method="post">
-    <input type="button"  value="Rejestracja">
-</form>
+<a href="http://localhost:8080/register.jsp">Zarejestruj sie!</a>
 
 
 </body>

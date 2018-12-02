@@ -1,17 +1,18 @@
 package pl.kolodzianka;
 
 
-import com.google.gson.Gson;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import pl.kolodzianka.entities.User;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.FileWriter;
+import java.io.File;
 import java.io.IOException;
 
-@WebServlet("/RegistrationServlet")
+@WebServlet("/register")
 public class RegistrationServlet extends HttpServlet {
 
     protected final User user = new User();
@@ -26,9 +27,9 @@ public class RegistrationServlet extends HttpServlet {
         user.setSurname(req.getParameter("surname"));
         user.setRole("user");
 
-        Gson gson = new Gson();
-        gson.toJson(user,(new FileWriter("/Users/ania/Projekty/Sklepik/src/main/webapp/WEB-INF/users.js")));
+        ObjectMapper mapper = new ObjectMapper();
 
+        mapper.writeValue(new File("WEB-INF/users.json"), user);
 
     }
 }
