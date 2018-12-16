@@ -28,4 +28,10 @@ public class ShopServlet extends HttpServlet {
         RequestDispatcher reqD = req.getRequestDispatcher("shop.jsp");
         reqD.forward(req,resp);
     }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        doGet(req,resp);
+
+    }
 }

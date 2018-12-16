@@ -1,4 +1,5 @@
 <html>
+<meta charset="UTF-8">
 <body>
 <h2>Witaj !</h2>
 <form action="/loginServlet" method="post">

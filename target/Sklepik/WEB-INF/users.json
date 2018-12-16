@@ -1,1 +1,49 @@
-{"users":[{"id":1,"username":"stecalbert","password":"12345678","totalCashSpend":3900.0,"name":"Albert","surname":"Stec","role":"admin"},{"id":2,"username":"bonaventura","password":"qwerty1234","totalCashSpend":100.0,"name":"Janusz","surname":"Kowalski","role":"user"},{"id":3,"username":"kolodzianka","password":"pwd","totalCashSpend":null,"name":"Anna","surname":"KoÅodziej","role":"user"}]}
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "stecalbert",
+      "password": "12345678",
+      "totalCashSpend": 3900.0,
+      "name": "Albert",
+      "surname": "Stec",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "username": "bonaventura",
+      "password": "qwerty1234",
+      "totalCashSpend": 100.0,
+      "name": "Janusz",
+      "surname": "Kowalski",
+      "role": "user"
+    },
+    {
+      "id": 3,
+      "username": "kolodzianka",
+      "password": "pwd",
+      "totalCashSpend": null,
+      "name": "Anna",
+      "surname": "KoÅodziej",
+      "role": "user"
+    },
+    {
+      "id": 4,
+      "username": "Pipi",
+      "password": "cokolwiek",
+      "totalCashSpend": null,
+      "name": "Dolores",
+      "surname": "Miednica",
+      "role": "user"
+    },
+    {
+      "id": 5,
+      "username": "yolo",
+      "password": "haslo",
+      "totalCashSpend": null,
+      "name": "Adam",
+      "surname": "Grodzki",
+      "role": "user"
+    }
+  ]
+}

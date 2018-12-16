@@ -19,7 +19,6 @@ public class LoginServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        PrintWriter out = resp.getWriter();
         ObjectMapper mapper = new ObjectMapper();
 
 
@@ -48,11 +47,6 @@ public class LoginServlet extends HttpServlet {
                 }
 
             }
-
-            RequestDispatcher rd = getServletContext().getRequestDispatcher("/index.jsp");
-            resp.getWriter().println("<font color=red>Niepoprawne dane lub załóż konto</font>");
-            rd.include(req, resp);
-
 
         } else {
             RequestDispatcher rd = getServletContext().getRequestDispatcher("/index.jsp");

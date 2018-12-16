@@ -45,7 +45,7 @@ public class RegistrationServlet extends HttpServlet {
         mapper.writeValue(g, userList);
 
         RequestDispatcher rd = getServletContext().getRequestDispatcher("/index.jsp");
-        resp.getWriter().println("<font color=red>Zarejestrowano użytkownika: " + user.toString() + "</font>");
+        resp.getWriter().println("<font color=red>Zarejestrowano uzytkownika: " + user.toString() + "</font>");
         rd.include(req, resp);
 
     }
