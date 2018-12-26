@@ -1,4 +1,4 @@
-package pl.kolodzianka;
+package pl.kolodzianka.jsonUtils;
 
 import pl.kolodzianka.entities.User;
 

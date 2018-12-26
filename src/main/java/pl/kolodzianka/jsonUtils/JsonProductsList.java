@@ -1,8 +1,5 @@
-package pl.kolodzianka;
+package pl.kolodzianka.jsonUtils;
 
-import com.fasterxml.jackson.annotation.JsonAutoDetect;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import pl.kolodzianka.entities.Product;
 
 import java.util.List;

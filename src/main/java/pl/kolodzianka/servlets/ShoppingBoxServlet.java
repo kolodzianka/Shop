@@ -1,7 +1,8 @@
-package pl.kolodzianka;
+package pl.kolodzianka.servlets;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import pl.kolodzianka.jsonUtils.JsonProductsList;
 import pl.kolodzianka.entities.Product;
 
 import javax.servlet.RequestDispatcher;
@@ -12,8 +13,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
@@ -40,7 +39,7 @@ public class ShoppingBoxServlet extends HttpServlet {
 
         ObjectMapper mapper = new ObjectMapper();
         PrintWriter out = resp.getWriter();
-        String path = "/Users/ania/Projekty/Sklepik/src/main/webapp/WEB-INF/" + user + ".json";
+        String path = "/Users/ania/Projekty/Sklepik/src/main/webapp/WEB-INF/boxes.json";
         File f = new File(path);
         if (f.exists() && f.isDirectory()) {
 
@@ -54,7 +53,7 @@ public class ShoppingBoxServlet extends HttpServlet {
                 out.println(e + "Nie znaleziono pliku.");
             }
         } else {
-            mapper.writeValue(new FileOutputStream(user+".json"),boxList);
+            mapper.writeValue(new FileOutputStream(path),boxList);
         }
         req.setAttribute("userbox", boxList.getProducts());
         RequestDispatcher reqD = req.getRequestDispatcher("userbox.jsp");

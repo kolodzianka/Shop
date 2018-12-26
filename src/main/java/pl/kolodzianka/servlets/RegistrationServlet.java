@@ -1,8 +1,9 @@
-package pl.kolodzianka;
+package pl.kolodzianka.servlets;
 
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import pl.kolodzianka.jsonUtils.JsonUserLists;
 import pl.kolodzianka.entities.User;
 
 import javax.servlet.RequestDispatcher;
@@ -19,7 +20,7 @@ import java.io.IOException;
 public class RegistrationServlet extends HttpServlet {
 
     protected final User user = new User();
-    protected  JsonUserLists userList = new JsonUserLists();
+    protected JsonUserLists userList = new JsonUserLists();
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

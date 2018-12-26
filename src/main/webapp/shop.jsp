@@ -1,4 +1,4 @@
-<%@ page import="pl.kolodzianka.JsonProductsList" %>
+<%@ page import="pl.kolodzianka.jsonUtils.JsonProductsList" %>
 <%@ page import="pl.kolodzianka.entities.Product" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.ArrayList" %><%--

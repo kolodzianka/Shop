@@ -1,6 +1,7 @@
-package pl.kolodzianka;
+package pl.kolodzianka.servlets;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import pl.kolodzianka.jsonUtils.JsonProductsList;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -14,7 +15,7 @@ import java.io.IOException;
 @WebServlet("/shopServlet")
 public class ShopServlet extends HttpServlet {
 
-    protected  JsonProductsList productsList = new JsonProductsList();
+    protected JsonProductsList productsList = new JsonProductsList();
 
 
     @Override
