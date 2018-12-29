@@ -7,30 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f49cb2ed-9b39-4d97-9168-fbae35b19a07" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/kolodzianka/utils/CookieUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/boxes.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/kolodzianka/jsonUtils/JsonShoppingBoxUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/kolodzianka/JsonProductsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/kolodzianka/jsonUtils/JsonProductsList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/kolodzianka/JsonUserLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/kolodzianka/jsonUtils/JsonUserLists.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/kolodzianka/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/kolodzianka/servlets/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/kolodzianka/RegistrationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/kolodzianka/servlets/RegistrationServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/kolodzianka/ShopServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/kolodzianka/servlets/ShopServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/kolodzianka/ShoppingBoxServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/kolodzianka/servlets/ShoppingBoxServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/shop.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/shop.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Sklepik/WEB-INF/classes/pl/kolodzianka/JsonProductsList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Sklepik/WEB-INF/classes/pl/kolodzianka/JsonUserLists.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Sklepik/WEB-INF/classes/pl/kolodzianka/LoginServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Sklepik/WEB-INF/classes/pl/kolodzianka/RegistrationServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Sklepik/WEB-INF/classes/pl/kolodzianka/ShopServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Sklepik/WEB-INF/classes/pl/kolodzianka/ShoppingBoxServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Sklepik/shop.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Sklepik/shop.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/kolodzianka/JsonProductsList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/kolodzianka/JsonUserLists.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/kolodzianka/LoginServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/kolodzianka/RegistrationServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/kolodzianka/ShopServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/kolodzianka/ShoppingBoxServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/kolodzianka/servlets/ShoppingBoxServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/kolodzianka/servlets/ShoppingBoxServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/boxes.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/boxes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/userbox.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/userbox.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Sklepik/WEB-INF/boxes.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/Sklepik/WEB-INF/boxes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Sklepik/WEB-INF/classes/pl/kolodzianka/servlets/ShoppingBoxServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Sklepik/WEB-INF/classes/pl/kolodzianka/servlets/ShoppingBoxServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Sklepik/userbox.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Sklepik/userbox.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/kolodzianka/servlets/ShoppingBoxServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/kolodzianka/servlets/ShoppingBoxServlet.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -52,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginServlet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoginServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/kolodzianka/servlets/LoginServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+            <state relative-caret-position="615">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,7 +52,7 @@
       <file leaf-file-name="CookieUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/kolodzianka/utils/CookieUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
+            <state relative-caret-position="120">
               <caret line="11" column="72" selection-start-line="11" selection-start-column="72" selection-end-line="11" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -76,44 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/users.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="1" selection-start-column="1" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ShoppingBoxServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/kolodzianka/servlets/ShoppingBoxServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JsonProductsList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/kolodzianka/jsonUtils/JsonProductsList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JsonUserLists.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/kolodzianka/jsonUtils/JsonUserLists.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="253">
+              <caret line="57" column="19" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -125,16 +77,16 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/boxes.json">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="1" selection-end-column="176" />
+              <caret column="1" selection-end-column="292" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userbox.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="userbox.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/userbox.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="255">
+              <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -142,10 +94,32 @@
       <file leaf-file-name="ShopServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/kolodzianka/servlets/ShopServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
+            <state relative-caret-position="45">
               <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shop.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/shop.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-575">
+              <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JsonShoppingBoxUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/kolodzianka/jsonUtils/JsonShoppingBoxUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#330#331#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -189,13 +163,14 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/kolodzianka/ShopServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/shop.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/pl/kolodzianka/LoginServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/userbox.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/pl/kolodzianka/ShoppingBoxServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/kolodzianka/servlets/ShoppingBoxServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/kolodzianka/JsonProductsList.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/kolodzianka/utils/CookieUtils.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/pl/kolodzianka/servlets/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/kolodzianka/jsonUtils/JsonShoppingBoxUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/kolodzianka/servlets/ShoppingBoxServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/userbox.jsp" />
       </list>
     </option>
   </component>
@@ -233,7 +208,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
@@ -324,6 +298,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -493,16 +468,17 @@
       <workItem from="1544861343211" duration="18579000" />
       <workItem from="1544942479349" duration="84000" />
       <workItem from="1545339613579" duration="3223000" />
-      <workItem from="1545844213200" duration="1192000" />
+      <workItem from="1545844213200" duration="3053000" />
+      <workItem from="1546001375983" duration="36000" />
+      <workItem from="1546030640154" duration="2320000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58899000" />
+    <option name="totallyTimeSpent" value="63116000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="710" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -515,17 +491,17 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39967373" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39967373" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32952693" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32952693" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28384992" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28384992" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32952693" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32952693" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2819063" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2907916" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -578,20 +554,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="8" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/kolodzianka/servlets/ShopServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/kolodzianka/servlets/ShoppingBoxServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="870">
@@ -870,13 +836,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/shop.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="50" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/kolodzianka/servlets/RegistrationServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -891,63 +850,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/userbox.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/kolodzianka/servlets/ShopServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/boxes.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-end-column="176" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/kolodzianka/jsonUtils/JsonProductsList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/kolodzianka/jsonUtils/JsonUserLists.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/kolodzianka/servlets/ShoppingBoxServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/kolodzianka/utils/CookieUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
+        <state relative-caret-position="120">
           <caret line="11" column="72" selection-start-line="11" selection-start-column="72" selection-end-line="11" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -964,11 +876,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/kolodzianka/servlets/LoginServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+        <state relative-caret-position="615">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/kolodzianka/jsonUtils/JsonProductsList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/kolodzianka/jsonUtils/JsonShoppingBoxUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/kolodzianka/servlets/ShopServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/kolodzianka/servlets/ShoppingBoxServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="57" column="19" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/boxes.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-end-column="292" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/shop.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-575">
+          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/userbox.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
         </state>
       </provider>
     </entry>

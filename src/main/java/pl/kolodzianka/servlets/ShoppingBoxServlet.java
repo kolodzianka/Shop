@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import pl.kolodzianka.jsonUtils.JsonProductsList;
 import pl.kolodzianka.entities.Product;
+import pl.kolodzianka.jsonUtils.JsonShoppingBoxUtil;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -21,7 +22,7 @@ import java.util.Optional;
 public class ShoppingBoxServlet extends HttpServlet {
 
     public String user;
-    JsonProductsList boxList;
+    JsonShoppingBoxUtil boxList;
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -34,7 +35,8 @@ public class ShoppingBoxServlet extends HttpServlet {
         }
         req.getSession().setAttribute("user", user);
 
-        boxList = new JsonProductsList();
+        boxList = new JsonShoppingBoxUtil();
+        boxList.setUserName(user);
         boxList.setProducts((List<Product>) req.getSession().getAttribute("box"));
 
         ObjectMapper mapper = new ObjectMapper();
@@ -55,7 +57,7 @@ public class ShoppingBoxServlet extends HttpServlet {
         } else {
             mapper.writeValue(new FileOutputStream(path),boxList);
         }
-        req.setAttribute("userbox", boxList.getProducts());
+        req.getSession().setAttribute("userbox", boxList.getProducts());
         RequestDispatcher reqD = req.getRequestDispatcher("userbox.jsp");
         reqD.forward(req, resp);
 
