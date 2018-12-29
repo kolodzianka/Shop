@@ -57,7 +57,7 @@
             right: 16px;
             font-size: 18px;
         }
-        .idz {
+        .go {
             position: absolute;
             bottom: 8px;
             right: 16px;
@@ -98,7 +98,7 @@
 </table>
 
 <form action="/shoppingbox" method="post">
-    <p class="idz"><input type="submit" value="Idz do koszyka"></p>
+    <p class="go"><input type="submit" value="Idz do koszyka"></p>
 </form>
 
 

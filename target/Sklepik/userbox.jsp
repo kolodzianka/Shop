@@ -21,12 +21,21 @@
         }
     }
     request.getSession().setAttribute("userbox", productsInBox);
-    int suma =0;
+    Double suma =0.0;
 
 %>
 <html>
 <head>
     <title>Twój koszyk</title>
+    <style>
+        .go {
+        position: absolute;
+        bottom: 8px;
+        right: 16px;
+        font-size: 18px;
+    }
+
+    </style>
 </head>
 <body>
 <h1>Twoje zakupy:</h1>
@@ -60,6 +69,13 @@
     </tr>
 
 </table>
+
+<form action="/shopServlet" method="post">
+    <p class="go"><input type="submit" value="Powrót do zakupów"></p>
+</form>
+<form action="/userbox.jsp" method="post">
+    <p><input type="button" onclick="alert('Dziękujemy za zamówienie')" value="Zapłać i zamów"></p>
+</form>
 
 </body>
 </html>

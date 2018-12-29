@@ -9,9 +9,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     List<Product> productsInBox = (List<Product>)request.getSession().getAttribute("userbox");
-    System.out.println(productsInBox);
     String productToDelete = request.getParameter("productToDelete");
-    System.out.println(productToDelete);
     if(productToDelete != null){
         for (int i =0; i< productsInBox.size(); i++) {
             if(productsInBox.get(i).getName().equals(productToDelete)){
@@ -21,12 +19,21 @@
         }
     }
     request.getSession().setAttribute("userbox", productsInBox);
-    int suma =0;
+    Double suma =0.0;
 
 %>
 <html>
 <head>
     <title>Twój koszyk</title>
+    <style>
+        .go {
+        position: absolute;
+        bottom: 8px;
+        right: 16px;
+        font-size: 18px;
+    }
+
+    </style>
 </head>
 <body>
 <h1>Twoje zakupy:</h1>
@@ -60,6 +67,13 @@
     </tr>
 
 </table>
+
+<form action="/shopServlet" method="post">
+    <p class="go"><input type="submit" value="Powrót do zakupów"></p>
+</form>
+<form action="/userbox.jsp" method="post">
+    <p><input type="button" onclick="alert('Dziękujemy za zamówienie')" value="Zapłać i zamów"></p>
+</form>
 
 </body>
 </html>

@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import pl.kolodzianka.jsonUtils.JsonProductsList;
 import pl.kolodzianka.entities.Product;
 import pl.kolodzianka.jsonUtils.JsonShoppingBoxUtil;
+import pl.kolodzianka.utils.CookieUtils;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -26,8 +27,8 @@ public class ShoppingBoxServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        if (readCookie("zalogowany", req).isPresent()) {
-            user = readCookie("zalogowany", req).get();
+        if (CookieUtils.readCookie("zalogowany", req).isPresent()) {
+            user = CookieUtils.readCookie("zalogowany", req).get();
         } else {
             RequestDispatcher rd = getServletContext().getRequestDispatcher("/index.jsp");
             resp.getWriter().println("<font color=red>Aby dodac do koszyka zaloguj się lub załóż konto.</font>");
@@ -64,12 +65,7 @@ public class ShoppingBoxServlet extends HttpServlet {
 
     }
 
-    public Optional<String> readCookie(String key, HttpServletRequest req) {
-        return Arrays.stream(req.getCookies())
-                .filter(c -> key.equals(c.getName()))
-                .map(Cookie::getValue)
-                .findAny();
-    }
+
 
 
 }
