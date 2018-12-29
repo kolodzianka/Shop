@@ -1,7 +1,9 @@
 <%@ page import="pl.kolodzianka.jsonUtils.JsonProductsList" %>
 <%@ page import="pl.kolodzianka.entities.Product" %>
 <%@ page import="java.util.List" %>
-<%@ page import="java.util.ArrayList" %><%--
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="pl.kolodzianka.utils.CookieUtils" %>
+<%@ page import="java.util.Optional" %><%--
   Created by IntelliJ IDEA.
   User: ania
   Date: 02/12/2018
@@ -15,6 +17,7 @@
         box = new ArrayList<>();
 
     }
+    Optional<String> username = CookieUtils.readCookie("zalogowany",request);
 
 
     List<Product> products = (List<Product>) request.getAttribute("products");
@@ -67,6 +70,10 @@
     </style>
 </head>
 <body>
+<p>Zalogowano: <%=username.get()%></p>
+<form action="/logOut" method="post">
+    <p><input type="submit" value="Wyloguj"></p>
+</form>
 <div><h1>Produkty:</h1></div>
 <div><p class="kosz" >Koszyk: <%=box.size()%>
 </p></div>
@@ -100,6 +107,7 @@
 <form action="/shoppingbox" method="post">
     <p class="go"><input type="submit" value="Idz do koszyka"></p>
 </form>
+
 
 
 </body>

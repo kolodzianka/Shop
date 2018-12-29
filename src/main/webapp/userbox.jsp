@@ -69,10 +69,10 @@
 </table>
 
 <form action="/shopServlet" method="post">
-    <p class="go"><input type="submit" value="Powrót do zakupów"></p>
+    <p class="go"><input type="submit" value="Powrot do zakupow"></p>
 </form>
-<form action="/userbox.jsp" method="post">
-    <p><input type="button" onclick="alert('Dziękujemy za zamówienie')" value="Zapłać i zamów"></p>
+<form action="/buyServlet" method="post">
+    <p><input type="submit" onclick="alert('Dziękujemy za zamówienie')" value="Zaplac i zamow"></p>
 </form>
 
 </body>

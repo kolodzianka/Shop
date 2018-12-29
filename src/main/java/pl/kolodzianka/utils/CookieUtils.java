@@ -11,9 +11,9 @@ import java.util.Optional;
 public class CookieUtils {
 
 
-    public static void createCookie(HttpServletResponse resp, User user){
+    public static void createCookie(HttpServletResponse resp, User user) {
         Cookie loginCookie = new Cookie("zalogowany", user.getUsername());
-        loginCookie.setMaxAge(30*60);
+        loginCookie.setMaxAge(30 * 60);
         resp.addCookie(loginCookie);
     }
 
@@ -22,5 +22,15 @@ public class CookieUtils {
                 .filter(c -> key.equals(c.getName()))
                 .map(Cookie::getValue)
                 .findAny();
+    }
+
+    public static void clearCookie(String key, HttpServletRequest req, HttpServletResponse resp) {
+        Cookie[] cookie = req.getCookies();
+        for (Cookie outcookie : cookie) {
+            if (outcookie != null && outcookie.getName().equals(key)) {
+                outcookie.setMaxAge(0);
+                resp.addCookie(outcookie);
+            }
+        }
     }
 }
