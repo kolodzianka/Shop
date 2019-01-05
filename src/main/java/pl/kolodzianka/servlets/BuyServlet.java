@@ -6,7 +6,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import pl.kolodzianka.jsonUtils.JsonShoppingBoxUtil;
 import pl.kolodzianka.utils.CookieUtils;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;

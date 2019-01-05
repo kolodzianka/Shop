@@ -1,8 +1,6 @@
 package pl.kolodzianka.jsonUtils;
 
 import pl.kolodzianka.entities.Product;
-import pl.kolodzianka.entities.User;
-
 import java.util.List;
 
 public class JsonShoppingBoxUtil {
