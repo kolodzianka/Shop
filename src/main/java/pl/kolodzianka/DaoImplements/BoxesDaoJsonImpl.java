@@ -37,16 +37,26 @@ public class BoxesDaoJsonImpl implements BoxesDao {
     @Override
     public void saveOrUpdate(String userName, List<Product> products) throws IOException{
         JsonShoppingBoxUtil boxList = new JsonShoppingBoxUtil();
-        boxList.setUserName(userName);
-        boxList.setProducts(products);
         File f = new File(PATH);
-            if (f.exists() && f.isDirectory()) {
+         //   if (f.exists() && f.isDirectory()) {
                 boxList.setProducts((List<Product>) mapper.readValue(f, JsonProductsList.class));
+                for(int i = 0;i< boxList.getUserName().length();i++){
+                    if(boxList.getUserName().equals(userName)){
+                        boxList.setProducts(products);
+                        break;
+                    }else {
+                        boxList.setUserName(userName);
+                        boxList.setProducts(products);
+                    }
+                }
+                System.out.println(userName);
+                System.out.println(products);
+                System.out.println(boxList.getUserName());
                 JsonGenerator g = mapper.getFactory().createGenerator(new FileOutputStream(f));
                 mapper.writeValue(g, boxList);
-            } else {
-                mapper.writeValue(new FileOutputStream(PATH), boxList);
-            }
+//            } else {
+//                mapper.writeValue(new FileOutputStream(PATH), boxList);
+//            }
     }
 
 
